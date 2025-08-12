@@ -23,6 +23,24 @@
     h1, h2 { font-weight: bold; }
     .portfolio-frame { width:100%; height:720px; border:2px solid var(--black); border-radius:12px; background:#fff }
     @media (max-width:540px){ header img[alt="Sua marca"]{ width:28px; height:28px; } }
+      /* Cores dos planos */
+    .plan.bronze{ border-color:#B87333; background: linear-gradient(0deg, rgba(184,115,51,.06), rgba(184,115,51,.06)), #fff; }
+    .plan.prata{ border-color:#C0C0C0; background: linear-gradient(0deg, rgba(192,192,192,.08), rgba(192,192,192,.08)), #fff; }
+    .plan.ouro{ border-color:#D4AF37; background: linear-gradient(0deg, rgba(212,175,55,.10), rgba(212,175,55,.10)), #fff; }
+    .plan.rubi{ border-color:#9B111E; background: linear-gradient(0deg, rgba(155,17,30,.08), rgba(155,17,30,.08)), #fff; }
+
+    /* Botões com cor do plano */
+    .plan.bronze .btn-primary{ background:#B87333; border-color:#B87333; }
+    .plan.bronze .btn-primary:hover{ background:#fff; color:#B87333; }
+
+    .plan.prata .btn-primary{ background:#C0C0C0; border-color:#C0C0C0; color:#111; }
+    .plan.prata .btn-primary:hover{ background:#fff; color:#777; }
+
+    .plan.ouro .btn-primary{ background:#D4AF37; border-color:#D4AF37; color:#111; }
+    .plan.ouro .btn-primary:hover{ background:#fff; color:#D4AF37; }
+
+    .plan.rubi .btn-primary{ background:#9B111E; border-color:#9B111E; }
+    .plan.rubi .btn-primary:hover{ background:#fff; color:#9B111E; }
   </style>
 </head>
 <body>
@@ -60,8 +78,8 @@
     <h2>Planos e Investimento</h2>
     <p>Escolha o pacote ideal e clique em “Quero este plano”. Eu recebo sua mensagem já com o plano desejado e seguimos no WhatsApp.</p>
     <div class="plans">
-      <div class="plan">
-        <h3>Básico</h3>
+      <div class="plan bronze">
+        <h3>Bronze</h3>
         <p><strong>R$ 480</strong> / ensaio</p>
         <ul>
           <li>Sessão fotográfica 1h</li>
@@ -70,11 +88,11 @@
           <li>Entrega padrão em 20 dias úteis</li>
           <li>Estúdio disponível</li>
         </ul>
-        <a class="btn btn-primary" href="https://wa.me/5561985985054?text=Olá%2C%20Jessé!%20Tenho%20interesse%20no%20plano%20Básico.%20Pode%20me%20enviar%20datas%20disponíveis%20e%20próximos%20passos%3F">Quero este plano</a>
+        <a class="btn btn-primary" href="https://wa.me/5561985985054?text=Olá%2C%20Jessé!%20Tenho%20interesse%20no%20plano%20Bronze.%20Pode%20me%20enviar%20datas%20disponíveis%20e%20próximos%20passos%3F">Quero este plano</a>
       </div>
 
-      <div class="plan">
-        <h3>Básico Plus</h3>
+      <div class="plan prata">
+        <h3>Prata</h3>
         <p><strong>R$ 580</strong> / ensaio</p>
         <ul>
           <li>Sessão fotográfica 1h</li>
@@ -84,11 +102,11 @@
           <li>Entrega padrão em 20 dias úteis</li>
           <li>Estúdio disponível</li>
         </ul>
-        <a class="btn btn-primary" href="https://wa.me/5561985985054?text=Olá%2C%20Jessé!%20Quero%20o%20plano%20Básico%20Plus.%20Pode%20me%20enviar%20datas%20disponíveis%20e%20formas%20de%20pagamento%3F">Quero este plano</a>
+        <a class="btn btn-primary" href="https://wa.me/5561985985054?text=Olá%2C%20Jessé!%20Quero%20o%20plano%20Prata.%20Pode%20me%20enviar%20datas%20disponíveis%20e%20formas%20de%20pagamento%3F">Quero este plano</a>
       </div>
 
-      <div class="plan">
-        <h3>Essencial <span style="font-size:12px;background:#000;color:#fff;padding:3px 6px;border-radius:6px;">Mais escolhido</span></h3>
+      <div class="plan ouro">
+        <h3>Ouro <span style="font-size:12px;background:#d4af37;color:#000;padding:3px 6px;border-radius:6px;">Mais escolhido</span></h3>
         <p><strong>R$ 755</strong> / ensaio</p>
         <ul>
           <li>Sessão fotográfica 2h</li>
@@ -99,11 +117,11 @@
           <li>Entrega rápida em 14 dias úteis</li>
           <li>Estúdio disponível</li>
         </ul>
-        <a class="btn btn-primary" href="https://wa.me/5561985985054?text=Olá%2C%20Jessé!%20Tenho%20interesse%20no%20plano%20Essencial.%20Vamos%20agendar%3F">Quero este plano</a>
+        <a class="btn btn-primary" href="https://wa.me/5561985985054?text=Olá%2C%20Jessé!%20Tenho%20interesse%20no%20plano%20Ouro.%20Vamos%20agendar%3F">Quero este plano</a>
       </div>
 
-      <div class="plan">
-        <h3>Elite</h3>
+      <div class="plan rubi">
+        <h3>Rubi</h3>
         <p><strong>R$ 3.100</strong> / ensaio</p>
         <ul>
           <li>Sessão fotográfica até 3h</li>
@@ -116,7 +134,7 @@
           <li>Reels de bastidores</li>
           <li>Entrega expressa de 7–10 dias úteis</li>
         </ul>
-        <a class="btn btn-primary" href="https://wa.me/5561985985054?text=Olá%2C%20Jessé!%20Quero%20o%20plano%20Elite.%20Pode%20me%20passar%20agenda%20e%20contrato%3F">Quero este plano</a>
+        <a class="btn btn-primary" href="https://wa.me/5561985985054?text=Olá%2C%20Jessé!%20Quero%20o%20plano%20Rubi.%20Pode%20me%20passar%20agenda%20e%20contrato%3F">Quero este plano</a>
       </div>
     </div>
   </section>
